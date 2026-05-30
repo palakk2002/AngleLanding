@@ -1,0 +1,373 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Outfit", sans-serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-delayed: float-delayed 8s ease-in-out infinite;
+  --animate-float-slow: float-slow 12s ease-in-out infinite;
+  --animate-pulse-slow: pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-glow: glow 4s ease-in-out infinite alternate;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+      transform: translateY(-15px) rotate(1deg);
+    }
+  }
+
+  @keyframes float-delayed {
+
+    0%,
+    100% {
+      transform: translateY(-12px) rotate(-1deg);
+    }
+
+    50% {
+      transform: translateY(6px) rotate(1deg);
+    }
+  }
+
+  @keyframes float-slow {
+
+    0%,
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+      transform: translateY(-25px) rotate(-2deg);
+    }
+  }
+
+  @keyframes pulse-slow {
+
+    0%,
+    100% {
+      opacity: 0.1;
+      transform: scale(1);
+    }
+
+    50% {
+      opacity: 0.25;
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes glow {
+    0% {
+      filter: drop-shadow(0 0 15px rgba(33, 138, 149, 0.15));
+    }
+
+    100% {
+      filter: drop-shadow(0 0 35px rgba(16, 21, 24, 0.25));
+    }
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(33, 138, 149, 0.2);
+  /* Soft Teal */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(33, 138, 149, 0.4);
+  /* Deeper Teal */
+}
+
+/* Core Corporate Teal & Charcoal Theme Wrapper Scoping */
+.landing-page-wrapper {
+  background: radial-gradient(120% 120% at 50% 10%, #ffffff 35%, #F4F9FA 75%, #E6F2F4 100%) !important;
+  /* Pure White -> Light Teal Tint */
+  color: #1F2937 !important;
+  /* Charcoal text for body */
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.landing-page-wrapper h1,
+.landing-page-wrapper h2,
+.landing-page-wrapper h3,
+.landing-page-wrapper h4,
+.landing-page-wrapper h5,
+.landing-page-wrapper h6 {
+  font-family: "Outfit", sans-serif;
+}
+
+/* Headings color mapping to deep black-charcoal */
+.landing-page-wrapper h1,
+.landing-page-wrapper h2,
+.landing-page-wrapper h3,
+.landing-page-wrapper h4,
+.landing-page-wrapper h5,
+.landing-page-wrapper h6,
+.landing-page-wrapper .text-white,
+.landing-page-wrapper .text-slate-100,
+.landing-page-wrapper .text-slate-200 {
+  color: #101518 !important;
+  /* Angle Logo Deep Charcoal Black */
+}
+
+/* SPECIFIC HERO HEADING OVERRIDE: Forces vibrant yellow text on dark background overlay */
+.landing-page-wrapper h1.hero-heading {
+  color: #D2E805 !important;
+}
+
+/* SPECIFIC HERO SUBTITLE OVERRIDE: Forces bright slate/white text on dark background overlay */
+.landing-page-wrapper p.hero-subtitle {
+  color: #E2E8F0 !important;
+}
+
+/* SPECIFIC WHY CHOOSE US OVERLAYS OVERRIDE: Forces bright white text on image overlays */
+.landing-page-wrapper .why-choose-us-overlay-title {
+  color: #ffffff !important;
+}
+.landing-page-wrapper .why-choose-us-overlay-subtitle {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Body & description text color mapping */
+.landing-page-wrapper p,
+.landing-page-wrapper .text-slate-400,
+.landing-page-wrapper .text-slate-300 {
+  color: #4B5563 !important;
+  /* Slate-600 */
+}
+
+/* Ambient glow orb overlays using beautiful soft teal */
+.landing-page-wrapper .bg-indigo-600\/10 {
+  background-color: rgba(33, 138, 149, 0.06) !important;
+}
+
+.landing-page-wrapper .bg-purple-600\/10 {
+  background-color: rgba(16, 21, 24, 0.04) !important;
+}
+
+.landing-page-wrapper .bg-pink-600\/5 {
+  background-color: rgba(33, 138, 149, 0.04) !important;
+}
+
+.landing-page-wrapper .bg-indigo-600\/5 {
+  background-color: rgba(33, 138, 149, 0.03) !important;
+}
+
+.landing-page-wrapper .bg-purple-600\/5 {
+  background-color: rgba(16, 21, 24, 0.03) !important;
+}
+
+/* Reusable Clean Glassmorphism cards */
+.landing-page-wrapper .glass-morphism {
+  background: rgba(255, 255, 255, 0.85) !important;
+  /* Clean transparent white */
+  border: 1px solid rgba(33, 138, 149, 0.12) !important;
+  /* Soft Teal border */
+  box-shadow: 0 10px 30px -10px rgba(16, 21, 24, 0.04) !important;
+  /* Subtle slate-black shadow */
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+}
+
+.landing-page-wrapper .glass-morphism-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.landing-page-wrapper .glass-morphism-hover:hover {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-color: rgba(33, 138, 149, 0.35) !important;
+  /* Vibrant teal border on hover */
+  box-shadow: 0 20px 45px -15px rgba(33, 138, 149, 0.12) !important;
+  transform: translateY(-4px) !important;
+}
+
+.landing-page-wrapper .glass-morphism-glow {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(33, 138, 149, 0.3) !important;
+  box-shadow: 0 20px 50px -10px rgba(33, 138, 149, 0.08) !important;
+}
+
+/* Specific Section Transparency Override */
+.landing-page-wrapper footer {
+  background-color: #00796B !important;
+}
+
+/* Solid Header Bar consistently: Locks down a hard solid white background across all states */
+.landing-page-wrapper header {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid rgba(33, 138, 149, 0.1) !important;
+  box-shadow: 0 4px 20px -2px rgba(16, 21, 24, 0.04) !important;
+}
+
+/* Sticky Navbar on scroll colors */
+.landing-page-wrapper header.bg-\[\#030014\]\/70 {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(33, 138, 149, 0.08) !important;
+  box-shadow: 0 10px 30px -10px rgba(33, 138, 149, 0.06) !important;
+}
+
+/* Mobile menu background */
+.landing-page-wrapper .fixed.top-0.left-0.w-full.h-screen {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+}
+
+/* Pre-configured dashboards previews overrides */
+.landing-page-wrapper .bg-slate-950\/60,
+.landing-page-wrapper .bg-slate-950\/70,
+.landing-page-wrapper .bg-slate-950\/65 {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border-color: rgba(33, 138, 149, 0.12) !important;
+  box-shadow: 0 25px 60px -20px rgba(16, 21, 24, 0.06) !important;
+}
+
+.landing-page-wrapper .bg-slate-900\/50 {
+  background-color: rgba(244, 249, 250, 0.8) !important;
+  /* Soft Teal tinted track */
+  border-color: rgba(33, 138, 149, 0.1) !important;
+}
+
+.landing-page-wrapper .bg-white\/5,
+.landing-page-wrapper .bg-white\/10 {
+  background-color: rgba(33, 138, 149, 0.03) !important;
+  border-color: rgba(33, 138, 149, 0.08) !important;
+}
+
+.landing-page-wrapper .border-white\/5,
+.landing-page-wrapper .border-white\/10 {
+  border-color: rgba(33, 138, 149, 0.08) !important;
+}
+
+.landing-page-wrapper .bg-indigo-500\/10 {
+  background-color: rgba(33, 138, 149, 0.08) !important;
+  /* Soft Teal Badge background */
+}
+
+/* Inline typography tweaks */
+.landing-page-wrapper .text-slate-400 {
+  color: #4B5563 !important;
+  /* Slate-600 */
+}
+
+/* Headings text gradient overrides */
+.landing-page-wrapper .text-gradient {
+  background: linear-gradient(135deg, #101518 0%, #1A6E77 60%, #218A95 100%) !important;
+  /* Charcoal to Teal gradient */
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.landing-page-wrapper .text-gradient-purple {
+  background: linear-gradient(135deg, #218A95 0%, #101518 50%, #1A6E77 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Specific text/color elements */
+.landing-page-wrapper .text-indigo-400,
+.landing-page-wrapper .text-indigo-300 {
+  color: #218A95 !important;
+  /* Vibrant Teal active text */
+}
+
+.landing-page-wrapper .text-purple-400 {
+  color: #101518 !important;
+  /* Charcoal black */
+}
+
+/* Reusable buttons variant maps */
+.landing-page-wrapper .bg-indigo-600 {
+  background-color: #218A95 !important;
+  /* Vibrant Teal button */
+  color: #ffffff !important;
+}
+
+.landing-page-wrapper .bg-indigo-600:hover {
+  background-color: #1A6E77 !important;
+  /* Deeper Teal hover */
+}
+
+.landing-page-wrapper .bg-gradient-to-r.from-indigo-600.to-purple-600 {
+  background: linear-gradient(to right, #218A95, #101518) !important;
+  /* Teal to Charcoal */
+}
+
+.landing-page-wrapper .shadow-\[0_0_20px_rgba\(99\,102\,241\,0\.4\)\] {
+  box-shadow: 0 8px 25px rgba(33, 138, 149, 0.25) !important;
+  /* Soft Teal shadows */
+}
+
+/* Pricing Card updates */
+.landing-page-wrapper .bg-indigo-950\/20 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(33, 138, 149, 0.4) !important;
+  /* Highlighting Teal border */
+  box-shadow: 0 25px 50px -12px rgba(33, 138, 149, 0.14) !important;
+}
+
+/* Timeline components background & border */
+.landing-page-wrapper .bg-\[\#080521\] {
+  background-color: #ffffff !important;
+  border-color: rgba(33, 138, 149, 0.2) !important;
+}
+
+/* Swiper overrides for premium teal dots */
+.swiper-pagination-bullet {
+  background: rgba(33, 138, 149, 0.2) !important;
+  opacity: 1 !important;
+  width: 8px !important;
+  height: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #218A95 !important;
+  /* Active Teal dot */
+  width: 24px !important;
+  border-radius: 4px !important;
+}
+
+/* Custom white text overrides for Competitive Edge section cards */
+.landing-page-wrapper .edge-card-title {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: none !important;
+}
+
+.landing-page-wrapper .edge-card-desc {
+  color: #e2e8f0 !important;
+}
+
+/* Force high contrast white and yellow text styles inside the Footer over the deep teal background */
+.landing-page-wrapper footer p,
+.landing-page-wrapper footer span,
+.landing-page-wrapper footer a {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.landing-page-wrapper footer a:hover {
+  color: #D2E805 !important;
+}
+
+.landing-page-wrapper footer h4 {
+  color: #D2E805 !important;
+}
+
+.landing-page-wrapper footer p.copyright-text {
+  color: rgba(255, 255, 255, 0.6) !important;
+}

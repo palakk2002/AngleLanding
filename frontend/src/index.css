@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+
+.vite-scaffold-container {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: var(--bg);
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+/* Highly specific overrides to guarantee white footer text on all pages and prevent any global wrapper overrides */
+footer p.address-text,
+.landing-page-wrapper footer p.address-text,
+.ecommerce-page-scoped-wrapper footer p.address-text,
+.social-impact-scoped-wrapper footer p.address-text,
+.delivery-partners-scoped-wrapper footer p.address-text,
+.client-partners-scoped-wrapper footer p.address-text,
+.careers-scoped-wrapper footer p.address-text {
+  color: #ffffff !important;
+  opacity: 0.95 !important;
+}
+
+footer p.copyright-text,
+.landing-page-wrapper footer p.copyright-text,
+.ecommerce-page-scoped-wrapper footer p.copyright-text,
+.social-impact-scoped-wrapper footer p.copyright-text,
+.delivery-partners-scoped-wrapper footer p.copyright-text,
+.client-partners-scoped-wrapper footer p.copyright-text,
+.careers-scoped-wrapper footer p.copyright-text {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+footer a.footer-email-link,
+.landing-page-wrapper footer a,
+.ecommerce-page-scoped-wrapper footer a,
+.social-impact-scoped-wrapper footer a,
+.delivery-partners-scoped-wrapper footer a,
+.client-partners-scoped-wrapper footer a,
+.careers-scoped-wrapper footer a {
+  color: #ffffff !important;
+}
+
+footer a.footer-email-link:hover,
+.landing-page-wrapper footer a:hover,
+.ecommerce-page-scoped-wrapper footer a:hover,
+.social-impact-scoped-wrapper footer a:hover,
+.delivery-partners-scoped-wrapper footer a:hover,
+.client-partners-scoped-wrapper footer a:hover,
+.careers-scoped-wrapper footer a:hover {
+  color: #D2E805 !important;
+}
+
+/* Footer Badge Specific Styling to ensure high contrast, official appearance across all pages */
+.footer-badge {
+  background-color: #101518 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  max-width: 170px !important;
+  height: 44px !important; /* Ensure consistent height */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  box-sizing: border-box !important;
+}
+
+.footer-badge:hover {
+  background-color: #1a2024 !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  transform: translateY(-2px) !important;
+}
+
+.footer-badge svg {
+  width: 20px !important;
+  height: 20px !important;
+  flex-shrink: 0 !important;
+}
+
+.footer-badge-title {
+  color: #94a3b8 !important; /* light slate gray */
+  font-size: 7px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  line-height: 1 !important;
+  font-family: system-ui, -apple-system, sans-serif !important;
+}
+
+.footer-badge-value {
+  color: #ffffff !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  margin-top: 2px !important;
+  font-family: system-ui, -apple-system, sans-serif !important;
+}/* Ensure footer email and phone links always show yellow-green brand color without needing hover */
+footer a.footer-email-link,
+footer a.footer-phone-link,
+.landing-page-wrapper footer a.footer-email-link,
+.landing-page-wrapper footer a.footer-phone-link,
+.ecommerce-page-scoped-wrapper footer a.footer-email-link,
+.ecommerce-page-scoped-wrapper footer a.footer-phone-link,
+.social-impact-scoped-wrapper footer a.footer-email-link,
+.social-impact-scoped-wrapper footer a.footer-phone-link,
+.delivery-partners-scoped-wrapper footer a.footer-email-link,
+.delivery-partners-scoped-wrapper footer a.footer-phone-link,
+.client-partners-scoped-wrapper footer a.footer-email-link,
+.client-partners-scoped-wrapper footer a.footer-phone-link,
+.careers-scoped-wrapper footer a.footer-email-link,
+.careers-scoped-wrapper footer a.footer-phone-link {
+  color: #D2E805 !important;
+}
