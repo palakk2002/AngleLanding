@@ -11,8 +11,6 @@ import reverseParcelImg from '../../../assets/angle_blog_reverse.png';
 import expressParcelImg from '../../../assets/angle_service_ecommerce.png';
 import primeImg from '../../../assets/angle_delivery_hero_premium.png';
 import criticalLogisticsImg from '../../../assets/angle_blog_fleet.png';
-import hyperlocalImg from '../../../assets/angle_service_hyperlocal.png';
-import smeImg from '../../../assets/angle_service_sme.png';
 
 const EcommercePage = () => {
   const [activeTab, setActiveTab] = useState('Reverse Parcel');
@@ -360,7 +358,7 @@ const EcommercePage = () => {
               <Link to="/hyperlocal" className="flex flex-col text-left group">
                 <div className="overflow-hidden rounded-2xl shadow-md bg-slate-50 border border-slate-100 mb-6 aspect-[4/3] w-full">
                   <img
-                    src={hyperlocalImg}
+                    src="/scooty.jpg"
                     alt="Hyperlocal & Quick Commerce"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
                   />
@@ -377,7 +375,7 @@ const EcommercePage = () => {
               <div className="flex flex-col text-left">
                 <div className="overflow-hidden rounded-2xl shadow-md bg-slate-50 border border-slate-100 mb-6 group cursor-pointer aspect-[4/3] w-full">
                   <img
-                    src={smeImg}
+                    src="/phone1.jpg"
                     alt="SME & Personal Courier"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
                   />

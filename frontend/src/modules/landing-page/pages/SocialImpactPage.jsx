@@ -26,7 +26,7 @@ const SocialImpactPage = () => {
     {
       title: "Securing Jobs & Dreams",
       description: "At Angle Courier, creating job opportunities through innovative logistics strategies is essential to our mission. We are dedicated to growing our network of over 100k delivery partners by providing comprehensive training and talent development, paving the way for rewarding career opportunities.",
-      image: ridersImg
+      image: '/cour.jpg'
     },
     {
       title: "Empowering Local Economy",
@@ -51,7 +51,7 @@ const SocialImpactPage = () => {
           {/* Background image cover */}
           <div className="absolute inset-0 z-0">
             <img 
-              src={ridersImg} 
+              src="/hero2.jpg" 
               alt="Our Social Impact & Growth Initiatives Riders" 
               className="w-full h-full object-cover object-center"
             />

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import angleHeroBg from '../../../assets/angle_hero_bg.png';
 
 const Hero = () => {
   const [awbNumber, setAwbNumber] = useState('');
@@ -17,7 +16,7 @@ const Hero = () => {
 
   // Google Play Badge matching the official white-background badge style
   const GooglePlayBadge = () => (
-    <div className="flex items-center gap-2.5 bg-white hover:bg-slate-50 text-[#101518] border border-slate-200 py-1.5 px-3.5 rounded-lg cursor-pointer transition-all duration-300 shadow-sm hover:shadow">
+    <a href="https://play.google.com/store/apps/details?id=com.angle.user" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 bg-white hover:bg-slate-50 text-[#101518] border border-slate-200 py-1.5 px-3.5 rounded-lg cursor-pointer transition-all duration-300 shadow-sm hover:shadow">
       <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M3.25 3.125C3.0625 3.3125 3 3.625 3 4V20C3 20.375 3.0625 20.6875 3.25 20.875L3.3125 20.9375L13.125 11.125V10.875L3.3125 1.0625L3.25 1.125V3.125Z" fill="#00E5FF"/>
         <path d="M16.375 14.375L13.125 11.125V10.875L16.375 7.625L16.4375 7.6875L20.25 9.875C21.3125 10.5 21.3125 11.5 20.25 12.125L16.4375 14.3125L16.375 14.375Z" fill="#FFC107"/>
@@ -28,7 +27,7 @@ const Hero = () => {
         <div className="text-[7px] font-medium text-slate-500 uppercase tracking-widest leading-none font-sans">GET IT ON</div>
         <div className="text-xs font-bold text-slate-900 leading-none mt-0.5 font-sans">Google Play</div>
       </div>
-    </div>
+    </a>
   );
 
   // Apple App Store Badge matching the official white-background badge style
@@ -49,7 +48,7 @@ const Hero = () => {
       id="home" 
       className="relative min-h-[calc(100vh-76px)] mt-[76px] py-20 flex items-center justify-center overflow-hidden bg-cover bg-no-repeat"
       style={{ 
-        backgroundImage: `url(${angleHeroBg})`,
+        backgroundImage: `url('/hero.jpg')`,
         backgroundPosition: 'center',
         backgroundSize: 'cover'
       }}

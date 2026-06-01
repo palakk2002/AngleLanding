@@ -52,8 +52,8 @@ const AboutPage = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isLightboxOpen, galleryPhotos.length]);
 
-  const [activeYear, setActiveYear] = useState(2015);
-  const years = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+  const [activeYear, setActiveYear] = useState(2022);
+  const years = [2022, 2023, 2024, 2025];
 
   const [activeLeaderIndex, setActiveLeaderIndex] = useState(0);
 
@@ -605,7 +605,7 @@ const AboutPage = () => {
             {/* Timeline Carousel */}
             <div className="flex items-center justify-between gap-4 overflow-x-auto pb-[2px] border-b-4 border-slate-800" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
               <button 
-                onClick={() => setActiveYear(Math.max(2015, activeYear - 1))}
+                onClick={() => setActiveYear(Math.max(2022, activeYear - 1))}
                 className="w-11 h-11 md:w-12 md:h-12 shrink-0 rounded-full bg-[#D2E805] flex items-center justify-center hover:bg-[#c2d600] transition-colors shadow-sm group mb-2"
               >
                 <svg className="w-5 h-5 text-[#00796B] transform group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">

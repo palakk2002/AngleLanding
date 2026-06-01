@@ -5,10 +5,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import TestimonialsForm from '../components/Testimonials';
-import hyperlocalImg from '../../../assets/angle_service_hyperlocal.png';
 const ecommerceImg = '/truck.jpg';
-import smeImg from '../../../assets/angle_service_sme.png';
-import deliveryHeroImg from '../../../assets/angle_delivery_hero_premium.png';
 import fleetImg from '../../../assets/angle_blog_fleet.png';
 import mapsImg from '../../../assets/angle_edge_maps.png';
 const truckImg = '/truck.jpg';
@@ -95,7 +92,7 @@ const HyperlocalPage = () => {
         <section 
           className="relative min-h-[calc(100vh-72px)] flex items-center bg-cover bg-no-repeat overflow-hidden py-20"
           style={{ 
-            backgroundImage: `url(${hyperlocalImg})`,
+            backgroundImage: `url('/sco.jpg')`,
             backgroundPosition: 'center 20%',
             backgroundSize: 'cover'
           }}
@@ -160,7 +157,7 @@ const HyperlocalPage = () => {
               <div className="lg:col-span-6">
                 <div className="overflow-hidden rounded-2xl shadow-md border border-slate-100 aspect-[4/3] w-full">
                   <img
-                    src={deliveryHeroImg}
+                    src="/cour.jpg"
                     alt="Courier delivery handing package to customer"
                     className="w-full h-full object-cover"
                   />
@@ -472,7 +469,7 @@ const HyperlocalPage = () => {
               <div className="flex flex-col text-left group cursor-pointer">
                 <div className="overflow-hidden rounded-2xl shadow-md bg-slate-50 border border-slate-100 mb-6 aspect-[4/3] w-full">
                   <img
-                    src={smeImg}
+                    src="/phone1.jpg"
                     alt="SME & Personal Courier"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
                   />

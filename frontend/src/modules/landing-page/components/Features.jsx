@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ecommerceImg from '../../../assets/angle_service_ecommerce.png';
-import hyperlocalImg from '../../../assets/angle_service_hyperlocal.png';
-import smeImg from '../../../assets/angle_service_sme.png';
 
 const Features = () => {
   const services = [
@@ -15,14 +13,14 @@ const Features = () => {
         'We provide end-to-end delivery services, from standard shipping to same-day and next-day delivery, designed for D2C and E-commerce brands. Our smart logistics and tech ensure speed, efficiency, and great customer experiences.',
     },
     {
-      image: hyperlocalImg,
+      image: '/scooty.jpg',
       title: 'Hyperlocal & Quick Commerce',
       route: '/hyperlocal',
       description:
         'Enjoy rapid deliveries within hours or choose flexible slots for same-day or next-day service. From groceries to medicines and more, with real-time tracking and reliable service.',
     },
     {
-      image: smeImg,
+      image: '/phone1.jpg',
       title: 'SME & Personal Courier',
       route: null,
       description:
