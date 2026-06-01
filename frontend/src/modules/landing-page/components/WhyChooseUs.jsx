@@ -2,11 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Import high-fidelity generated blog images
-import featuredImg from '../../../assets/angle_blog_featured.png';
-import aiImg from '../../../assets/angle_blog_ai.png';
-import fleetImg from '../../../assets/angle_blog_fleet.png';
-import partnersImg from '../../../assets/angle_blog_partners.png';
-import reverseImg from '../../../assets/angle_blog_reverse.png';
+import featuredImg from '../../../assets/angle_blog_featured.webp';
+import aiImg from '../../../assets/angle_blog_ai.webp';
+import fleetImg from '../../../assets/angle_blog_fleet.webp';
+import partnersImg from '../../../assets/angle_blog_partners.webp';
+import reverseImg from '../../../assets/angle_blog_reverse.webp';
 
 const WhyChooseUs = () => {
   const rightBlogs = [
@@ -80,8 +80,7 @@ const WhyChooseUs = () => {
           >
             {/* Card image container */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] lg:aspect-[6/5] shadow-sm border border-slate-100 mb-5">
-              <img 
-                src={featuredImg} 
+              <img loading="lazy" src={featuredImg} 
                 alt="Angle 360 digital shipping"
                 className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-103"
               />
@@ -131,8 +130,7 @@ const WhyChooseUs = () => {
               >
                 {/* Card image container */}
                 <div className="relative rounded-2xl overflow-hidden aspect-[16/10] shadow-sm border border-slate-100 mb-4">
-                  <img 
-                    src={blog.image} 
+                  <img loading="lazy" src={blog.image} 
                     alt={blog.title}
                     className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-103"
                   />

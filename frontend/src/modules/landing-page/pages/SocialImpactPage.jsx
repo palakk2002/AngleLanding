@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import ridersImg from '../../../assets/social_impact_riders.png';
-import impactEducationImg from '../../../assets/impact_education.png';
-import impactEconomyImg from '../../../assets/impact_economy.png';
-import gajendraRiderImg from '../../../assets/gajendra_rider.png';
-import niteshLohiyaImg from '../../../assets/nitesh_lohiya.png';
-import blogPartnersImg from '../../../assets/angle_blog_partners.png';
-import pharmacyImg from '../../../assets/pharmacy_dark_store_quick_commerce.png';
-const deliveryHeroImg = '/cou.jpg';
+import ridersImg from '../../../assets/social_impact_riders.webp';
+import impactEducationImg from '../../../assets/impact_education.webp';
+import impactEconomyImg from '../../../assets/impact_economy.webp';
+import gajendraRiderImg from '../../../assets/gajendra_rider.webp';
+import niteshLohiyaImg from '../../../assets/nitesh_lohiya.webp';
+import blogPartnersImg from '../../../assets/angle_blog_partners.webp';
+import pharmacyImg from '../../../assets/pharmacy_dark_store_quick_commerce.webp';
+const deliveryHeroImg = '/cou.webp';
 
 const SocialImpactPage = () => {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -26,7 +26,7 @@ const SocialImpactPage = () => {
     {
       title: "Securing Jobs & Dreams",
       description: "At Angle Courier, creating job opportunities through innovative logistics strategies is essential to our mission. We are dedicated to growing our network of over 100k delivery partners by providing comprehensive training and talent development, paving the way for rewarding career opportunities.",
-      image: '/cour.jpg'
+      image: '/cour.webp'
     },
     {
       title: "Empowering Local Economy",
@@ -50,8 +50,7 @@ const SocialImpactPage = () => {
         <section className="relative w-full min-h-[580px] md:min-h-[660px] flex items-center justify-start overflow-hidden">
           {/* Background image cover */}
           <div className="absolute inset-0 z-0">
-            <img 
-              src="/hero2.jpg" 
+            <img loading="lazy" src="/hero2.webp" 
               alt="Our Social Impact & Growth Initiatives Riders" 
               className="w-full h-full object-cover object-center"
             />
@@ -115,8 +114,7 @@ const SocialImpactPage = () => {
                       >
                         {/* Image */}
                         <div className="aspect-[1.5] w-full overflow-hidden bg-slate-50">
-                          <img
-                            src={item.image}
+                          <img loading="lazy" src={item.image}
                             alt={item.title}
                             className="w-full h-full object-cover select-none"
                           />
@@ -187,8 +185,7 @@ const SocialImpactPage = () => {
                 <div className="bg-[#00796B] text-white p-6 md:p-8 rounded-[24px] shadow-lg relative flex flex-col md:flex-row items-center md:items-start gap-6 max-w-lg lg:translate-x-6 translate-y-12 lg:translate-y-16 hover:shadow-xl transition-shadow duration-300 z-20">
                   {/* Rider photo */}
                   <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-white/20 shrink-0 bg-slate-100">
-                    <img
-                      src={gajendraRiderImg}
+                    <img loading="lazy" src={gajendraRiderImg}
                       alt="Gajendra - Shadowfax Partner"
                       className="w-full h-full object-cover select-none"
                     />
@@ -235,8 +232,7 @@ const SocialImpactPage = () => {
               {/* Right Column: Flat Rectangular Image (Watermark-Free, Shadow-Free) */}
               <div className="lg:col-span-7 flex justify-center items-center">
                 <div className="w-full aspect-[16/10] overflow-hidden rounded-none border-none shadow-none bg-slate-100">
-                  <img
-                    src="/cou.jpg"
+                  <img loading="lazy" src="/cou.webp"
                     alt="Highly Specialised Training"
                     className="w-full h-full object-cover select-none"
                   />
@@ -275,8 +271,7 @@ const SocialImpactPage = () => {
                 <div className="bg-[#00796B] text-white p-6 md:p-8 rounded-[24px] shadow-lg relative flex flex-col md:flex-row items-center md:items-start gap-6 max-w-lg lg:translate-x-6 translate-y-12 lg:translate-y-16 hover:shadow-xl transition-shadow duration-300 z-20">
                   {/* Partner photo */}
                   <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-white/20 shrink-0 bg-slate-100">
-                    <img
-                      src={niteshLohiyaImg}
+                    <img loading="lazy" src={niteshLohiyaImg}
                       alt="Bikram Sinha - Aardhya Electric Supply"
                       className="w-full h-full object-cover select-none"
                     />
@@ -333,8 +328,7 @@ const SocialImpactPage = () => {
 
                 {/* Right Column: Flush Image (Rounded right edge clipped by parent overflow-hidden) */}
                 <div className="lg:col-span-7 w-full min-h-[320px] lg:min-h-[420px] relative">
-                  <img
-                    src={blogPartnersImg}
+                  <img loading="lazy" src={blogPartnersImg}
                     alt="Food & Essential Delivery Partner"
                     className="absolute inset-0 w-full h-full object-cover select-none"
                   />
@@ -359,8 +353,7 @@ const SocialImpactPage = () => {
 
                 {/* Right Column: Flush Image (Rounded right edge clipped by parent overflow-hidden) */}
                 <div className="lg:col-span-7 w-full min-h-[320px] lg:min-h-[420px] relative">
-                  <img
-                    src={impactEconomyImg}
+                  <img loading="lazy" src={impactEconomyImg}
                     alt="Zomato Feeding India Campaign"
                     className="absolute inset-0 w-full h-full object-cover select-none"
                   />
@@ -404,8 +397,7 @@ const SocialImpactPage = () => {
 
                 {/* Right Column: Flush Image (Rounded right edge clipped by parent overflow-hidden) */}
                 <div className="lg:col-span-7 w-full min-h-[320px] lg:min-h-[420px] relative">
-                  <img
-                    src={pharmacyImg}
+                  <img loading="lazy" src={pharmacyImg}
                     alt="Support for Our Delivery Partners"
                     className="absolute inset-0 w-full h-full object-cover select-none"
                   />
@@ -430,8 +422,7 @@ const SocialImpactPage = () => {
 
                 {/* Right Column: Flush Image (Rounded right edge clipped by parent overflow-hidden) */}
                 <div className="lg:col-span-7 w-full min-h-[320px] lg:min-h-[420px] relative">
-                  <img
-                    src={deliveryHeroImg}
+                  <img loading="lazy" src={deliveryHeroImg}
                     alt="Partnership with Homeline"
                     className="absolute inset-0 w-full h-full object-cover select-none"
                   />

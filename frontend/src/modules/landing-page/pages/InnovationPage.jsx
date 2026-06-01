@@ -4,16 +4,16 @@ import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Cpu, Globe, Rocket, Shield, Zap, Lightbulb, Boxes, Handshake } from 'lucide-react';
 import { Link } from 'react-router-dom';
-const warehouseImg = '/angleman.jpg';
-import apiTechImg from '../../../assets/api_tech_developer.png';
-import innovationLightbulbImg from '../../../assets/innovation_lightbulb.png';
-import sustainabilityGrowthImg from '../../../assets/sustainability_growth.png';
-import demandForecastingImg from '../../../assets/demand_forecasting.png';
-import misroutingSolutionsImg from '../../../assets/misrouting_solutions.png';
-import routeOptimizationImg from '../../../assets/route_optimization.png';
-import niteshLohiyaImg from '../../../assets/nitesh_lohiya.png';
-import ananyaSharmaImg from '../../../assets/ananya_sharma.png';
-import openSourceWarehouseImg from '../../../assets/open_source_warehouse.png';
+const warehouseImg = '/angleman.webp';
+import apiTechImg from '../../../assets/api_tech_developer.webp';
+import innovationLightbulbImg from '../../../assets/innovation_lightbulb.webp';
+import sustainabilityGrowthImg from '../../../assets/sustainability_growth.webp';
+import demandForecastingImg from '../../../assets/demand_forecasting.webp';
+import misroutingSolutionsImg from '../../../assets/misrouting_solutions.webp';
+import routeOptimizationImg from '../../../assets/route_optimization.webp';
+import niteshLohiyaImg from '../../../assets/nitesh_lohiya.webp';
+import ananyaSharmaImg from '../../../assets/ananya_sharma.webp';
+import openSourceWarehouseImg from '../../../assets/open_source_warehouse.webp';
 
 const InnovationPage = () => {
   const [activeLeaderIndex, setActiveLeaderIndex] = useState(0);
@@ -265,8 +265,7 @@ const InnovationPage = () => {
               {/* Right Column: Warehouse Sorting Image */}
               <div className="lg:col-span-6">
                 <div className="overflow-hidden rounded-2xl shadow-lg border border-slate-100 aspect-[4/3] w-full bg-slate-50">
-                  <img
-                    src={warehouseImg}
+                  <img loading="lazy" src={warehouseImg}
                     alt="Most Powerful Logistics API for Businesses"
                     className="w-full h-full object-cover opacity-95 hover:opacity-100 transition-opacity duration-300"
                   />
@@ -373,8 +372,7 @@ const InnovationPage = () => {
                 {/* Right Column: High-tech Developer Image */}
                 <div className="lg:col-span-6">
                   <div className="overflow-hidden rounded-2xl shadow-lg border border-slate-100 aspect-[16/10] md:aspect-[16/9] w-full bg-white">
-                    <img
-                      src={apiTechImg}
+                    <img loading="lazy" src={apiTechImg}
                       alt="Optimizing Integrations with Cutting-edge APIs"
                       className="w-full h-full object-cover opacity-95 hover:opacity-100 transition-opacity duration-300"
                     />
@@ -395,8 +393,7 @@ const InnovationPage = () => {
               <div className="bg-[#f8f9fa] border border-slate-100 rounded-3xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
                 <div>
                   <div className="overflow-hidden rounded-2xl aspect-[16/10] w-full mb-6 bg-white border border-slate-100">
-                    <img
-                      src={innovationLightbulbImg}
+                    <img loading="lazy" src={innovationLightbulbImg}
                       alt="Innovation at the Core of Our Solutions"
                       className="w-full h-full object-cover"
                     />
@@ -416,8 +413,7 @@ const InnovationPage = () => {
               <div className="bg-[#f8f9fa] border border-slate-100 rounded-3xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
                 <div>
                   <div className="overflow-hidden rounded-2xl aspect-[16/10] w-full mb-6 bg-white border border-slate-100">
-                    <img
-                      src={sustainabilityGrowthImg}
+                    <img loading="lazy" src={sustainabilityGrowthImg}
                       alt="An Eye on Sustainability & Growth"
                       className="w-full h-full object-cover"
                     />
@@ -454,8 +450,7 @@ const InnovationPage = () => {
               <div className="bg-[#f8f9fa] border border-slate-100 rounded-3xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
                 <div>
                   <div className="overflow-hidden rounded-2xl aspect-[16/10] w-full mb-6 bg-white border border-slate-100">
-                    <img
-                      src={demandForecastingImg}
+                    <img loading="lazy" src={demandForecastingImg}
                       alt="Demand Forecasting"
                       className="w-full h-full object-cover"
                     />
@@ -475,8 +470,7 @@ const InnovationPage = () => {
               <div className="bg-[#f8f9fa] border border-slate-100 rounded-3xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
                 <div>
                   <div className="overflow-hidden rounded-2xl aspect-[16/10] w-full mb-6 bg-white border border-slate-100">
-                    <img
-                      src={misroutingSolutionsImg}
+                    <img loading="lazy" src={misroutingSolutionsImg}
                       alt="Efficient Misrouting Solutions"
                       className="w-full h-full object-cover"
                     />
@@ -496,8 +490,7 @@ const InnovationPage = () => {
               <div className="bg-[#f8f9fa] border border-slate-100 rounded-3xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
                 <div>
                   <div className="overflow-hidden rounded-2xl aspect-[16/10] w-full mb-6 bg-white border border-slate-100">
-                    <img
-                      src={routeOptimizationImg}
+                    <img loading="lazy" src={routeOptimizationImg}
                       alt="Swift Navigation with Route Optimization"
                       className="w-full h-full object-cover"
                     />
@@ -546,8 +539,7 @@ const InnovationPage = () => {
                   {/* Left Column: Headshot Photo */}
                   <div className="md:col-span-5 flex justify-center">
                     <div className="overflow-hidden rounded-2xl shadow-md aspect-square w-full max-w-[280px] bg-slate-50 border border-slate-100">
-                      <img
-                        src={leadershipTeam[activeLeaderIndex].image}
+                      <img loading="lazy" src={leadershipTeam[activeLeaderIndex].image}
                         alt={leadershipTeam[activeLeaderIndex].name}
                         className="w-full h-full object-cover transition-opacity duration-300"
                       />
@@ -613,8 +605,7 @@ const InnovationPage = () => {
               {/* Right Column: High-tech Dark Warehouse Image */}
               <div className="flex justify-center w-full">
                 <div className="overflow-hidden rounded-3xl shadow-xl border border-slate-100/50 aspect-[16/10] w-full max-w-[650px] bg-slate-900">
-                  <img
-                    src={openSourceWarehouseImg}
+                  <img loading="lazy" src={openSourceWarehouseImg}
                     alt="Angle Open Source Warehouse"
                     className="w-full h-full object-cover select-none hover:scale-105 transition-transform duration-500"
                   />

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-const teamGroupImg = '/angleteam.jpg';
+const teamGroupImg = '/angleteam.webp';
 
 const CareersPage = () => {
   useEffect(() => {
@@ -17,8 +17,7 @@ const CareersPage = () => {
         <section className="relative w-full min-h-[560px] md:min-h-[660px] flex items-center justify-start overflow-hidden">
           {/* Background image cover */}
           <div className="absolute inset-0 z-0">
-            <img 
-              src={teamGroupImg} 
+            <img loading="lazy" src={teamGroupImg} 
               alt="Angle Courier Team Group" 
               className="w-full h-full object-cover object-center"
             />

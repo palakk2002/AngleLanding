@@ -1,26 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import ecommerceImg from '../../../assets/angle_service_ecommerce.png';
+import ecommerceImg from '../../../assets/angle_service_ecommerce.webp';
 
 const Features = () => {
   const services = [
     {
-      image: '/truck.jpg',
+      image: '/truck.webp',
       title: 'Ecommerce & D2C',
       route: '/ecommerce',
       description:
         'We provide end-to-end delivery services, from standard shipping to same-day and next-day delivery, designed for D2C and E-commerce brands. Our smart logistics and tech ensure speed, efficiency, and great customer experiences.',
     },
     {
-      image: '/scooty.jpg',
+      image: '/scooty.webp',
       title: 'Hyperlocal & Quick Commerce',
       route: '/hyperlocal',
       description:
         'Enjoy rapid deliveries within hours or choose flexible slots for same-day or next-day service. From groceries to medicines and more, with real-time tracking and reliable service.',
     },
     {
-      image: '/phone1.jpg',
+      image: '/phone1.webp',
       title: 'SME & Personal Courier',
       route: null,
       description:
@@ -49,8 +49,7 @@ const Features = () => {
               <>
                 {/* Premium Rectangular Service Image Container */}
                 <div className="overflow-hidden rounded-2xl shadow-md bg-slate-50 border border-slate-100 mb-6 group cursor-pointer aspect-[4/3] w-full">
-                  <img
-                    src={service.image}
+                  <img loading="lazy" src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
                   />

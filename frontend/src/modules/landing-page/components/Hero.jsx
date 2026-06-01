@@ -48,7 +48,7 @@ const Hero = () => {
       id="home" 
       className="relative min-h-[calc(100vh-76px)] mt-[76px] py-20 flex items-center justify-center overflow-hidden bg-cover bg-no-repeat"
       style={{ 
-        backgroundImage: `url('/hero.jpg')`,
+        backgroundImage: `url('/hero.webp')`,
         backgroundPosition: 'center',
         backgroundSize: 'cover'
       }}

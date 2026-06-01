@@ -5,13 +5,13 @@ import Footer from '../components/Footer';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 // Asset imports
-const deliveryPartnerImg = '/truck.jpg';
-const highwayTruckImg = '/truck.jpg';
-import networkMapImg from '../../../assets/angle_edge_maps.png';
-import scooterImg from '../../../assets/angle_blog_fleet.png';
-import warehouseImg from '../../../assets/step_03_management.png';
-import niteshLohiyaImg from '../../../assets/nitesh_lohiya.png';
-import ananyaSharmaImg from '../../../assets/ananya_sharma.png';
+const deliveryPartnerImg = '/truck.webp';
+const highwayTruckImg = '/truck.webp';
+import networkMapImg from '../../../assets/angle_edge_maps.webp';
+import scooterImg from '../../../assets/angle_blog_fleet.webp';
+import warehouseImg from '../../../assets/step_03_management.webp';
+import niteshLohiyaImg from '../../../assets/nitesh_lohiya.webp';
+import ananyaSharmaImg from '../../../assets/ananya_sharma.webp';
 
 const AboutPage = () => {
   // Ensure page scrolls to top on route change
@@ -23,18 +23,18 @@ const AboutPage = () => {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
   const galleryPhotos = [
-    { id: 1, category: "Awards", title: "Best Tech in Logistics 2023 Ceremony", image: "/p1.jpg" },
-    { id: 2, category: "Team Life", title: "Annual Leadership Alignment Summit", image: "/p2.jpg" },
-    { id: 3, category: "Milestone", title: "Celebrating 10 Years of Excellence", image: "/p3.jpg" },
-    { id: 4, category: "Activities", title: "Regional Operations Team Meetup", image: "/p4.jpg" },
-    { id: 5, category: "Awards", title: "National Courier Network Award 2024", image: "/p5.jpg" },
-    { id: 6, category: "Conferences", title: "Logistics Future Tech Expo 2025", image: "/p6.jpg" },
-    { id: 7, category: "Activities", title: "Angle Fleet Kickoff and Celebrations", image: "/p7.jpg" },
-    { id: 8, category: "Awards", title: "ONDC's Best Logistics Innovation 2023", image: "/p9.jpg" },
-    { id: 9, category: "Team Life", title: "Annual Sports and Wellness Championship", image: "/p11.jpg" },
-    { id: 10, category: "Milestone", title: "Express Parcel Launch Ceremony", image: "/p18.jpg" },
-    { id: 11, category: "Conferences", title: "National Hyperlocal Supply Chain Meet 2024", image: "/p15.jpg" },
-    { id: 12, category: "Activities", title: "Customer Support Team Appreciation Event", image: "/p13.jpg" }
+    { id: 1, category: "Awards", title: "Best Tech in Logistics 2023 Ceremony", image: "/p1.webp" },
+    { id: 2, category: "Team Life", title: "Annual Leadership Alignment Summit", image: "/p2.webp" },
+    { id: 3, category: "Milestone", title: "Celebrating 10 Years of Excellence", image: "/p3.webp" },
+    { id: 4, category: "Activities", title: "Regional Operations Team Meetup", image: "/p4.webp" },
+    { id: 5, category: "Awards", title: "National Courier Network Award 2024", image: "/p5.webp" },
+    { id: 6, category: "Conferences", title: "Logistics Future Tech Expo 2025", image: "/p6.webp" },
+    { id: 7, category: "Activities", title: "Angle Fleet Kickoff and Celebrations", image: "/p7.webp" },
+    { id: 8, category: "Awards", title: "ONDC's Best Logistics Innovation 2023", image: "/p9.webp" },
+    { id: 9, category: "Team Life", title: "Annual Sports and Wellness Championship", image: "/p11.webp" },
+    { id: 10, category: "Milestone", title: "Express Parcel Launch Ceremony", image: "/p18.webp" },
+    { id: 11, category: "Conferences", title: "National Hyperlocal Supply Chain Meet 2024", image: "/p15.webp" },
+    { id: 12, category: "Activities", title: "Customer Support Team Appreciation Event", image: "/p13.webp" }
   ];
 
   useEffect(() => {
@@ -68,13 +68,13 @@ const AboutPage = () => {
       name: "Ajeet Kumar Singh",
       role: "Director",
       quote: "Strategic leadership is the cornerstone of our operations. By aligning our resources and vision, we ensure that every delivery reflects our promise of reliability and speed across the nation.",
-      image: "/director.jpg"
+      image: "/director.webp"
     },
     {
       name: "Pratima Singh",
       role: "Director",
       quote: "Operational excellence is what drives us. I am proud of the team’s dedication to maintaining the highest standards of service as we continue to expand our reach to every corner of India.",
-      image: "/fdirector.jpg"
+      image: "/fdirector.webp"
     },
     {
       name: "Neha",
@@ -169,8 +169,7 @@ const AboutPage = () => {
                     transition={{ duration: 0.5 }}
                     className="relative rounded-2xl overflow-hidden shadow-md group h-[260px] md:h-[280px]"
                   >
-                    <img 
-                      src={deliveryPartnerImg} 
+                    <img loading="lazy" src={deliveryPartnerImg} 
                       alt="Delivery Partner" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
@@ -187,8 +186,7 @@ const AboutPage = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="relative rounded-2xl overflow-hidden shadow-md group h-[200px] md:h-[220px]"
                   >
-                    <img 
-                      src={highwayTruckImg} 
+                    <img loading="lazy" src={highwayTruckImg} 
                       alt="Logistics Fleet" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
@@ -205,8 +203,7 @@ const AboutPage = () => {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     className="relative rounded-2xl overflow-hidden shadow-md group h-[260px] md:h-[280px]"
                   >
-                    <img 
-                      src={scooterImg} 
+                    <img loading="lazy" src={scooterImg} 
                       alt="Scooter Fleet" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
@@ -223,8 +220,7 @@ const AboutPage = () => {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     className="relative rounded-2xl overflow-hidden shadow-md group h-[476px] md:h-[516px]"
                   >
-                    <img 
-                      src={networkMapImg} 
+                    <img loading="lazy" src={networkMapImg} 
                       alt="Network Map" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
@@ -241,8 +237,7 @@ const AboutPage = () => {
                     transition={{ duration: 0.5, delay: 0.5 }}
                     className="relative rounded-2xl overflow-hidden shadow-md group h-[260px] md:h-[280px]"
                   >
-                    <img 
-                      src={warehouseImg} 
+                    <img loading="lazy" src={warehouseImg} 
                       alt="Warehouse" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
@@ -277,8 +272,7 @@ const AboutPage = () => {
               {/* Leader 1 */}
               <div className="flex flex-col group cursor-pointer">
                 <div className="w-full aspect-[3/4] rounded-lg overflow-hidden mb-4 bg-gradient-to-b from-[#E2E8F0] to-[#94A3B8] relative">
-                  <img 
-                    src={niteshLohiyaImg} 
+                  <img loading="lazy" src={niteshLohiyaImg} 
                     alt="Shrikant Singh" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -290,8 +284,7 @@ const AboutPage = () => {
               {/* Leader 2 */}
               <div className="flex flex-col group cursor-pointer">
                 <div className="w-full aspect-[3/4] rounded-lg overflow-hidden mb-4 bg-gradient-to-b from-[#E2E8F0] to-[#94A3B8] relative">
-                  <img 
-                    src="/director.jpg" 
+                  <img loading="lazy" src="/director.webp" 
                     alt="Ajeet Kumar Singh" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -303,8 +296,7 @@ const AboutPage = () => {
               {/* Leader 3 */}
               <div className="flex flex-col group cursor-pointer">
                 <div className="w-full aspect-[3/4] rounded-lg overflow-hidden mb-4 bg-gradient-to-b from-[#E2E8F0] to-[#94A3B8] relative">
-                  <img 
-                    src="/fdirector.jpg" 
+                  <img loading="lazy" src="/fdirector.webp" 
                     alt="Pratima Singh" 
                     className="w-full h-full object-cover object-left group-hover:scale-105 transition-transform duration-700"
                   />
@@ -316,8 +308,7 @@ const AboutPage = () => {
               {/* Leader 4 */}
               <div className="flex flex-col group cursor-pointer">
                 <div className="w-full aspect-[3/4] rounded-lg overflow-hidden mb-4 bg-gradient-to-b from-[#E2E8F0] to-[#94A3B8] relative">
-                  <img 
-                    src={ananyaSharmaImg} 
+                  <img loading="lazy" src={ananyaSharmaImg} 
                     alt="Neha" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -443,7 +434,7 @@ const AboutPage = () => {
                       currentPhotoIndex === tIdx ? 'border-[#D2E805] scale-105 shadow-md opacity-100' : 'border-transparent opacity-40 hover:opacity-100'
                     }`}
                   >
-                    <img src={thumb.image} alt="" className="w-full h-full object-cover" />
+                    <img loading="lazy" src={thumb.image} alt="" className="w-full h-full object-cover" />
                   </div>
                 ))}
               </div>
@@ -490,8 +481,7 @@ const AboutPage = () => {
                   {/* Left Column: Headshot Photo */}
                   <div className="md:col-span-5 flex justify-center">
                     <div className="overflow-hidden rounded-2xl shadow-md aspect-square w-full max-w-[280px] bg-slate-50 border border-slate-100">
-                      <img
-                        src={leadershipTeam[activeLeaderIndex].image}
+                      <img loading="lazy" src={leadershipTeam[activeLeaderIndex].image}
                         alt={leadershipTeam[activeLeaderIndex].name}
                         className="w-full h-full object-cover transition-opacity duration-300"
                       />
@@ -545,7 +535,7 @@ const AboutPage = () => {
               {/* Vision Card */}
               <div className="relative rounded-2xl overflow-hidden min-h-[300px] flex flex-col justify-center p-8 md:p-10 lg:p-12 shadow-sm group border border-slate-100">
                 <div className="absolute inset-0">
-                  <img src={networkMapImg} alt="Vision Background" className="w-full h-full object-cover opacity-[0.25] mix-blend-luminosity group-hover:scale-105 transition-transform duration-1000" />
+                  <img loading="lazy" src={networkMapImg} alt="Vision Background" className="w-full h-full object-cover opacity-[0.25] mix-blend-luminosity group-hover:scale-105 transition-transform duration-1000" />
                   <div className="absolute inset-0 bg-gradient-to-br from-[#D2E805]/60 via-[#E8F5A4]/70 to-white/95"></div>
                 </div>
                 <div className="relative z-10 flex flex-col h-full justify-between gap-12">
@@ -559,7 +549,7 @@ const AboutPage = () => {
               {/* Mission Card */}
               <div className="relative rounded-2xl overflow-hidden min-h-[300px] flex flex-col justify-center p-8 md:p-10 lg:p-12 shadow-sm group border border-slate-100">
                 <div className="absolute inset-0">
-                  <img src={warehouseImg} alt="Mission Background" className="w-full h-full object-cover opacity-[0.25] mix-blend-luminosity group-hover:scale-105 transition-transform duration-1000" />
+                  <img loading="lazy" src={warehouseImg} alt="Mission Background" className="w-full h-full object-cover opacity-[0.25] mix-blend-luminosity group-hover:scale-105 transition-transform duration-1000" />
                   <div className="absolute inset-0 bg-gradient-to-br from-[#D2E805]/60 via-[#E8F5A4]/70 to-white/95"></div>
                 </div>
                 <div className="relative z-10 flex flex-col h-full justify-between gap-12">

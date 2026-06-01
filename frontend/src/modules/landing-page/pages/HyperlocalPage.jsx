@@ -5,16 +5,16 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import TestimonialsForm from '../components/Testimonials';
-const ecommerceImg = '/truck.jpg';
-import fleetImg from '../../../assets/angle_blog_fleet.png';
-import mapsImg from '../../../assets/angle_edge_maps.png';
-const truckImg = '/truck.jpg';
-import foodImg from '../../../assets/food_quick_commerce.png';
-import clockCartImg from '../../../assets/clock_cart_quick_commerce.png';
-import pharmacyImg from '../../../assets/pharmacy_dark_store_quick_commerce.png';
-import step1Img from '../../../assets/step_01_requirements.png';
-import step2Img from '../../../assets/step_02_onboarding.png';
-import step3Img from '../../../assets/step_03_management.png';
+const ecommerceImg = '/truck.webp';
+import fleetImg from '../../../assets/angle_blog_fleet.webp';
+import mapsImg from '../../../assets/angle_edge_maps.webp';
+const truckImg = '/truck.webp';
+import foodImg from '../../../assets/food_quick_commerce.webp';
+import clockCartImg from '../../../assets/clock_cart_quick_commerce.webp';
+import pharmacyImg from '../../../assets/pharmacy_dark_store_quick_commerce.webp';
+import step1Img from '../../../assets/step_01_requirements.webp';
+import step2Img from '../../../assets/step_02_onboarding.webp';
+import step3Img from '../../../assets/step_03_management.webp';
 
 const HyperlocalPage = () => {
   const [activeTab, setActiveTab] = useState('quick-commerce');
@@ -67,17 +67,17 @@ const HyperlocalPage = () => {
   const steps = {
     'step-01': {
       title: 'Requirement Sharing',
-      image: '/angleteam.jpg',
+      image: '/angleteam.webp',
       description: 'Client shares manpower requirement at a store level; short gig of <6 hours shared over API.'
     },
     'step-02': {
       title: 'Fleet Onboarding',
-      image: '/angke.jpg',
+      image: '/angke.webp',
       description: 'Angle Courier gauges interest from its 10 lakh+ delivery partners, identifies & trains highest potential candidates.'
     },
     'step-03': {
       title: 'Fleet Management',
-      image: '/angleman.jpg',
+      image: '/angleman.webp',
       description: 'Local store leader from Angle Courier manages fleet and order delivery performance on behalf of the client; backfilling attrition in case of a deficit.'
     }
   };
@@ -92,7 +92,7 @@ const HyperlocalPage = () => {
         <section 
           className="relative min-h-[calc(100vh-72px)] flex items-center bg-cover bg-no-repeat overflow-hidden py-20"
           style={{ 
-            backgroundImage: `url('/sco.jpg')`,
+            backgroundImage: `url('/sco.webp')`,
             backgroundPosition: 'center 20%',
             backgroundSize: 'cover'
           }}
@@ -156,8 +156,7 @@ const HyperlocalPage = () => {
               {/* Right Column: Hero Image representing courier delivery */}
               <div className="lg:col-span-6">
                 <div className="overflow-hidden rounded-2xl shadow-md border border-slate-100 aspect-[4/3] w-full">
-                  <img
-                    src="/cour.jpg"
+                  <img loading="lazy" src="/cour.webp"
                     alt="Courier delivery handing package to customer"
                     className="w-full h-full object-cover"
                   />
@@ -309,13 +308,13 @@ const HyperlocalPage = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="rounded-2xl overflow-hidden shadow-sm aspect-square">
-                <img src={foodImg} alt="Food Delivery" className="w-full h-full object-cover" />
+                <img loading="lazy" src={foodImg} alt="Food Delivery" className="w-full h-full object-cover" />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-sm aspect-square">
-                <img src={clockCartImg} alt="Quick Commerce" className="w-full h-full object-cover" />
+                <img loading="lazy" src={clockCartImg} alt="Quick Commerce" className="w-full h-full object-cover" />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-sm aspect-square">
-                <img src={pharmacyImg} alt="Dark Store Pharmacy" className="w-full h-full object-cover" />
+                <img loading="lazy" src={pharmacyImg} alt="Dark Store Pharmacy" className="w-full h-full object-cover" />
               </div>
             </div>
           </section>
@@ -451,8 +450,7 @@ const HyperlocalPage = () => {
               {/* Card 1: Ecommerce */}
               <Link to="/ecommerce" className="flex flex-col text-left group">
                 <div className="overflow-hidden rounded-2xl shadow-md bg-slate-50 border border-slate-100 mb-6 aspect-[4/3] w-full">
-                  <img
-                    src={ecommerceImg}
+                  <img loading="lazy" src={ecommerceImg}
                     alt="Ecommerce & D2C"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
                   />
@@ -468,8 +466,7 @@ const HyperlocalPage = () => {
               {/* Card 2: SME */}
               <div className="flex flex-col text-left group cursor-pointer">
                 <div className="overflow-hidden rounded-2xl shadow-md bg-slate-50 border border-slate-100 mb-6 aspect-[4/3] w-full">
-                  <img
-                    src="/phone1.jpg"
+                  <img loading="lazy" src="/phone1.webp"
                     alt="SME & Personal Courier"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
                   />

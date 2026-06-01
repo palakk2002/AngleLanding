@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { X, Menu, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import angleLogo from '../../../assets/anglecourierlogo.jpg';
+import angleLogo from '../../../assets/anglecourierlogo.webp';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

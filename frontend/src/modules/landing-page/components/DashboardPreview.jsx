@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Import high-fidelity generated competitive edge assets
-import mapsAsset from '../../../assets/angle_edge_maps.png';
-import shieldAsset from '../../../assets/angle_edge_shield.png';
-import gigsAsset from '../../../assets/angle_edge_gigs.png';
+import mapsAsset from '../../../assets/angle_edge_maps.webp';
+import shieldAsset from '../../../assets/angle_edge_shield.webp';
+import gigsAsset from '../../../assets/angle_edge_gigs.webp';
 
 const DashboardPreview = () => {
   const edgeCards = [
@@ -53,8 +53,7 @@ const DashboardPreview = () => {
             >
               {/* Background Image with slight hover scale */}
               <div className="absolute inset-0 z-0 overflow-hidden">
-                <img 
-                  src={card.image} 
+                <img loading="lazy" src={card.image} 
                   alt={card.title}
                   className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" 
                 />

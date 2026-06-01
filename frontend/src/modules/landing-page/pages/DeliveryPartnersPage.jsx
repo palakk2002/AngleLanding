@@ -18,7 +18,7 @@ import {
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-const riderHeroImg = '/cour.jpg';
+const riderHeroImg = '/cour.webp';
 
 const DeliveryPartnersPage = () => {
   useEffect(() => {
@@ -180,8 +180,7 @@ const DeliveryPartnersPage = () => {
             {/* Right Column: Hero Graphic Image */}
             <div className="lg:col-span-6 w-full flex justify-center">
               <div className="relative w-full max-w-xl aspect-[1.38] overflow-hidden rounded-2xl shadow-xl border border-slate-100/60 hover:shadow-2xl transition-shadow duration-500 bg-slate-50">
-                <img 
-                  src="/cou.jpg" 
+                <img loading="lazy" src="/cou.webp" 
                   alt="Angle Courier Delivery Rider" 
                   className="w-full h-full object-cover transform hover:scale-101 transition-transform duration-700 ease-out"
                 />

@@ -5,12 +5,12 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import TestimonialsForm from '../components/Testimonials';
-import ecomHeroBgImg from '../../../assets/ecom_hero_bg.png';
-const whatIsTruckImg = '/truck.jpg';
-import reverseParcelImg from '../../../assets/angle_blog_reverse.png';
-import expressParcelImg from '../../../assets/angle_service_ecommerce.png';
-import primeImg from '../../../assets/angle_delivery_hero_premium.png';
-import criticalLogisticsImg from '../../../assets/angle_blog_fleet.png';
+import ecomHeroBgImg from '../../../assets/ecom_hero_bg.webp';
+const whatIsTruckImg = '/truck.webp';
+import reverseParcelImg from '../../../assets/angle_blog_reverse.webp';
+import expressParcelImg from '../../../assets/angle_service_ecommerce.webp';
+import primeImg from '../../../assets/angle_delivery_hero_premium.webp';
+import criticalLogisticsImg from '../../../assets/angle_blog_fleet.webp';
 
 const EcommercePage = () => {
   const [activeTab, setActiveTab] = useState('Reverse Parcel');
@@ -60,7 +60,7 @@ const EcommercePage = () => {
     {
       id: 'Express Parcel',
       title: 'Express Parcel',
-      image: '/truck.jpg',
+      image: '/truck.webp',
       description: 'With our wide distribution network and automated sorting terminals, we guarantee rapid transit times and on-time delivery for standard and urgent shipments across the nation.'
     },
     {
@@ -234,8 +234,7 @@ const EcommercePage = () => {
 
             {/* Right Illustration Column */}
             <div className="lg:col-span-5 flex justify-center items-center relative">
-              <img 
-                src={whatIsTruckImg} 
+              <img loading="lazy" src={whatIsTruckImg} 
                 alt="Angle Courier Service Branded Freight Truck over geometric backing" 
                 className="w-full max-w-md object-contain drop-shadow-lg scale-102 hover:scale-105 transition-transform duration-300"
               />
@@ -271,8 +270,7 @@ const EcommercePage = () => {
                 {/* Visual Column */}
                 <div className="md:col-span-5 flex justify-center">
                   <div className="w-full rounded-2xl overflow-hidden shadow-md border border-[#B1E0D1]/40 relative group">
-                    <img 
-                      src={tabs.find(t => t.id === activeTab).image} 
+                    <img loading="lazy" src={tabs.find(t => t.id === activeTab).image} 
                       alt={tabs.find(t => t.id === activeTab).title}
                       className="w-full h-auto object-cover rounded-xl transition-transform duration-500 group-hover:scale-102"
                     />
@@ -357,8 +355,7 @@ const EcommercePage = () => {
               {/* Card 1: Hyperlocal */}
               <Link to="/hyperlocal" className="flex flex-col text-left group">
                 <div className="overflow-hidden rounded-2xl shadow-md bg-slate-50 border border-slate-100 mb-6 aspect-[4/3] w-full">
-                  <img
-                    src="/scooty.jpg"
+                  <img loading="lazy" src="/scooty.webp"
                     alt="Hyperlocal & Quick Commerce"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
                   />
@@ -374,8 +371,7 @@ const EcommercePage = () => {
               {/* Card 2: SME */}
               <div className="flex flex-col text-left">
                 <div className="overflow-hidden rounded-2xl shadow-md bg-slate-50 border border-slate-100 mb-6 group cursor-pointer aspect-[4/3] w-full">
-                  <img
-                    src="/phone1.jpg"
+                  <img loading="lazy" src="/phone1.webp"
                     alt="SME & Personal Courier"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
                   />

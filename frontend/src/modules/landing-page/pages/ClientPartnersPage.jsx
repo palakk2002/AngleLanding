@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import handshakeImg from '../../../assets/partner_handshake.png';
+import handshakeImg from '../../../assets/partner_handshake.webp';
 
 const ClientPartnersPage = () => {
   useEffect(() => {
@@ -99,8 +99,7 @@ const ClientPartnersPage = () => {
             {/* Right Column: Handshake Image */}
             <div className="lg:col-span-6 w-full flex justify-center">
               <div className="relative w-full max-w-xl aspect-[1.38] overflow-hidden rounded-xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow duration-500">
-                <img 
-                  src={handshakeImg} 
+                <img loading="lazy" src={handshakeImg} 
                   alt="Client Partners Handshake" 
                   className="w-full h-full object-cover transform hover:scale-102 transition-transform duration-700 ease-out"
                 />
